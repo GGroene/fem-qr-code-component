@@ -1,108 +1,115 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Frontend Mentor | QR code component</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
-        body {
-            background-color: hsl(212, 45%, 89%);
-        }
+      body {
+        background-color: hsl(212, 45%, 89%);
+      }
 
-        .attribution {
-            font-size: 11px;
-            text-align: center;
-        }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
 
-        .attribution a {
-            color: hsl(228, 45%, 44%);
-        }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
 
-        .container {
-            position: fixed;
-            inset: 0px;
-            width: 320px;
-            height: 499px;
-            margin: auto;
-            background-color: hsl(0, 0%, 100%);
-            border-radius: 20px;
-        }
+      .container {
+        position: fixed;
+        inset: 0px;
+        width: 320px;
+        height: 499px;
+        margin: auto;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 20px;
+      }
 
-        .qr {
-            width: 288px;
-            height: 288px;
-            margin-top: 16px;
-            margin-left: 16px;
-            margin-right: 16px;
-            margin-bottom: 24px;
-            border-radius: 20px;
-            overflow: hidden;
-        }
+      .qr {
+        width: 288px;
+        height: 288px;
+        margin-top: 16px;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-bottom: 24px;
+        border-radius: 20px;
+        overflow: hidden;
+      }
 
-        .textbox {
-            width: 288px;
-            height: 131px;
-            padding-left: 16px;
-            padding-right: 16px;
-            padding-bottom: 40px;
-        }
+      .textbox {
+        width: 288px;
+        height: 131px;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-bottom: 40px;
+      }
 
-        .title {
-            width: 256px;
-            padding-left: 16px;
-            padding-right: 16px;
-            font-family: Outfit;
-            text-align: center;
-            font-weight: 700;
-            font-size: 15px;
-            color: hsl(218, 44%, 22%);
-            padding-bottom: 16px;
-        }
+      .title {
+        width: 256px;
+        padding-left: 16px;
+        padding-right: 16px;
+        font-family: Outfit;
+        text-align: center;
+        text-justify: top;
+        font-weight: 700;
+        font-size: 22px;
+        color: hsl(218, 44%, 22%);
+      }
 
-        .content {
-            width: 256px;
-            padding-left: 16px;
-            padding-right: 16px;
-            font-family: Outfit;
-            text-align: center;
-            font-weight: 400;
-            font-size: 15px;
-            color: hsl(216, 15%, 48%)
-        }
+      .content {
+        width: 256px;
+        padding-left: 16px;
+        padding-right: 16px;
+        font-family: Outfit;
+        text-align: center;
+        text-justify: top;
+        font-weight: 400;
+        font-size: 15px;
+        color: hsl(216, 15%, 48%);
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <div class="container">
-        <div class="qr">
-            <img src="images/image-qr-code.png" width="288" height="288" />
-        </div>
-        <div class="textbox">
-            <div class="title">
-                Improve your front-end skills by building projects
-            </div>
-            <div class="content">
-                Scan the QR code to visit Frontend Mentor and take your coding skills
-                to the next level
-            </div>
-        </div>
-    </div>
-
+  <body>
     <div class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
-            href="#">Gijs Groeneveld</a>.
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Gijs Groeneveld</a>.
     </div>
-</body>
-
+    <div class="container">
+      <div class="qr">
+        <img src="images/image-qr-code.png" width="288" height="288" />
+      </div>
+      <div class="textbox">
+        <h1 class="title">
+          Improve your front-end skills by building projects
+        </h1>
+        <p class="content">
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
